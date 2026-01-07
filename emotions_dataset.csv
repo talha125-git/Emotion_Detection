@@ -1,0 +1,484 @@
+text,emotion
+I am very happy today,happy
+I feel joyful,happy
+This is wonderful,happy
+I love this so much,happy
+Fantastic news,happy
+I'm thrilled,happy
+What a great day,happy
+I'm over the moon,happy
+This makes me smile,happy
+Feeling ecstatic,happy
+I'm delighted,happy
+Absolutely amazing,happy
+So much fun,happy
+I'm content,happy
+Life is beautiful,happy
+Perfect day,happy
+I'm grateful,happy
+This is awesome,happy
+Feeling blessed,happy
+Couldn't be happier,happy
+Wonderful experience,happy
+I'm excited,happy
+Pure joy,happy
+This is fantastic,happy
+Feeling great,happy
+So happy right now,happy
+Best day ever,happy
+I'm pleased,happy
+This is excellent,happy
+Really enjoying this,happy
+Feeling optimistic,happy
+I'm cheerful,happy
+Such a good time,happy
+Everything is perfect,happy
+I'm satisfied,happy
+This is brilliant,happy
+Feeling positive,happy
+I'm glad,happy
+Super happy,happy
+This is outstanding,happy
+Feeling wonderful,happy
+I'm overjoyed,happy
+So much happiness,happy
+I'm elated,happy
+This is superb,happy
+Beaming with joy,happy
+I'm jubilant,happy
+This is marvelous,happy
+Extremely happy,happy
+I'm blissful,happy
+Having a great time,happy
+This is perfect,happy
+So delighted,happy
+Very pleased,happy
+Overwhelmed with joy,happy
+On cloud nine,happy
+Walking on air,happy
+In high spirits,happy
+Full of joy,happy
+Radiating happiness,happy
+Bursting with happiness,happy
+Absolutely thrilled,happy
+Completely happy,happy
+Totally delighted,happy
+Utterly joyful,happy
+Extremely pleased,happy
+Incredibly happy,happy
+Remarkably joyful,happy
+Exceptionally glad,happy
+Unbelievably happy,happy
+Truly ecstatic,happy
+Really joyful,happy
+Very cheerful,happy
+Quite happy,happy
+Pretty delighted,happy
+Fairly joyful,happy
+Somewhat happy,happy
+Moderately pleased,happy
+Slightly happy,happy
+Mildly joyful,happy
+Reasonably happy,happy
+Acceptably joyful,happy
+Adequately pleased,happy
+Sufficiently happy,happy
+Appropriately joyful,happy
+Suitably pleased,happy
+Properly happy,happy
+Correctly joyful,happy
+Accurately pleased,happy
+Exactly happy,happy
+Precisely joyful,happy
+Specifically pleased,happy
+Particularly happy,happy
+Especially joyful,happy
+Specially pleased,happy
+Notably happy,happy
+Remarkably joyful,happy
+Significantly pleased,happy
+Importantly happy,happy
+I am so sad,sad
+Feeling depressed,sad
+This is heartbreaking,sad
+I'm crying,sad
+Feeling down,sad
+This is terrible,sad
+I'm devastated,sad
+So disappointed,sad
+Feeling blue,sad
+This makes me unhappy,sad
+I'm miserable,sad
+Feeling gloomy,sad
+This is awful,sad
+I'm heartbroken,sad
+Feeling low,sad
+So upset,sad
+I'm dejected,sad
+This is depressing,sad
+Feeling sorrowful,sad
+I'm despondent,sad
+This is dismal,sad
+Feeling melancholy,sad
+I'm forlorn,sad
+This is dire,sad
+So disheartened,sad
+I'm crestfallen,sad
+Feeling wretched,sad
+This is grievous,sad
+I'm woeful,sad
+Feeling tearful,sad
+So sorrowful,sad
+I'm dolorous,sad
+This is lamentable,sad
+Feeling desolate,sad
+I'm anguished,sad
+This is tragic,sad
+So mournful,sad
+I'm heavy-hearted,sad
+Feeling pensive,sad
+This is pitiful,sad
+I'm broken,sad
+Feeling somber,sad
+So dejected,sad
+I'm despairing,sad
+This is woeful,sad
+Feeling glum,sad
+I'm downcast,sad
+This is cheerless,sad
+Utterly sad,sad
+Completely depressed,sad
+Totally heartbroken,sad
+Absolutely devastated,sad
+Entirely disappointed,sad
+Wholly blue,sad
+Fully unhappy,sad
+Thoroughly miserable,sad
+Quite gloomy,sad
+Very awful,sad
+Extremely low,sad
+Highly upset,sad
+Really dejected,sad
+Truly depressing,sad
+Genuinely sorrowful,sad
+Particularly despondent,sad
+Especially dismal,sad
+Specially melancholy,sad
+Notably forlorn,sad
+Remarkably dire,sad
+Significantly disheartened,sad
+Importantly crestfallen,sad
+Substantially wretched,sad
+Considerably grievous,sad
+Appreciably woeful,sad
+Noticeably tearful,sad
+Observably sorrowful,sad
+Perceptibly dolorous,sad
+Detectably lamentable,sad
+Discernibly desolate,sad
+Recognizably anguished,sad
+Identifiably tragic,sad
+Distinctively mournful,sad
+Characteristically heavy-hearted,sad
+Typically pensive,sad
+Commonly pitiful,sad
+Generally broken,sad
+Usually somber,sad
+Normally dejected,sad
+Regularly despairing,sad
+Frequently woeful,sad
+Often glum,sad
+Sometimes downcast,sad
+Occasionally cheerless,sad
+Rarely joyful,sad
+Seldom happy,sad
+Infrequently delighted,sad
+Hardly ever pleased,sad
+I am furious,angry
+This makes me mad,angry
+I hate this,angry
+I'm so angry,angry
+This is unacceptable,angry
+I'm livid,angry
+Absolutely furious,angry
+I'm irate,angry
+This is ridiculous,angry
+I'm enraged,angry
+Totally unacceptable,angry
+This makes me furious,angry
+I'm fuming,angry
+Completely unreasonable,angry
+I'm incensed,angry
+This is outrageous,angry
+I'm seething,angry
+Utterly ridiculous,angry
+I'm infuriated,angry
+This is maddening,angry
+I'm wrathful,angry
+Completely angry,angry
+I'm boiling,angry
+This is aggravating,angry
+I'm cross,angry
+Totally furious,angry
+This is provoking,angry
+I'm aggravated,angry
+Absolutely livid,angry
+This is irritating,angry
+I'm provoked,angry
+Completely irate,angry
+This is vexing,angry
+I'm annoyed,angry
+Totally enraged,angry
+This is galling,angry
+I'm irritated,angry
+Absolutely incensed,angry
+This is exasperating,angry
+I'm displeased,angry
+Completely furious,angry
+This is infuriating,angry
+I'm riled,angry
+Totally angry,angry
+This is maddening,angry
+I'm outraged,angry
+Absolutely furious,angry
+This is annoying,angry
+Very angry,angry
+Extremely mad,angry
+Highly furious,angry
+Really livid,angry
+Truly irate,angry
+Genuinely enraged,angry
+Particularly fuming,angry
+Especially incensed,angry
+Specially seething,angry
+Notably infuriated,angry
+Remarkably wrathful,angry
+Significantly boiling,angry
+Importantly cross,angry
+Substantially aggravated,angry
+Considerably provoked,angry
+Appreciably annoyed,angry
+Noticeably irritated,angry
+Observably displeased,angry
+Perceptibly riled,angry
+Detectably outraged,angry
+Discernibly angry,angry
+Recognizably mad,angry
+Identifiably furious,angry
+Distinctively livid,angry
+Characteristically irate,angry
+Typically enraged,angry
+Commonly fuming,angry
+Generally incensed,angry
+Usually seething,angry
+Normally infuriated,angry
+Regularly wrathful,angry
+Frequently boiling,angry
+Often cross,angry
+Sometimes aggravated,angry
+Occasionally provoked,angry
+Rarely annoyed,angry
+Seldom irritated,angry
+Infrequently displeased,angry
+Hardly ever riled,angry
+Barely outraged,angry
+Scarcely angry,angry
+Almost never mad,angry
+Nearly furious,angry
+Practically livid,angry
+Virtually irate,angry
+Essentially enraged,angry
+Basically fuming,angry
+Fundamentally incensed,angry
+I am scared,fear
+Feeling afraid,fear
+This is frightening,fear
+I'm terrified,fear
+Feeling fearful,fear
+This is scary,fear
+I'm anxious,fear
+Feeling nervous,fear
+This is alarming,fear
+I'm panicked,fear
+Feeling threatened,fear
+This is daunting,fear
+I'm apprehensive,fear
+Feeling uneasy,fear
+This is intimidating,fear
+I'm worried,fear
+Feeling jittery,fear
+This is horrifying,fear
+I'm concerned,fear
+Feeling edgy,fear
+This is petrifying,fear
+I'm frightened,fear
+Feeling tense,fear
+This is chilling,fear
+I'm shaking,fear
+Feeling restless,fear
+This is dreadful,fear
+I'm timid,fear
+Feeling hesitant,fear
+This is menacing,fear
+I'm shy,fear
+Feeling cautious,fear
+This is ominous,fear
+I'm queasy,fear
+Feeling troubled,fear
+This is dire,fear
+I'm disturbed,fear
+Feeling insecure,fear
+This is forbidding,fear
+I'm alarmed,fear
+Feeling jumpy,fear
+This is hair-raising,fear
+I'm aghast,fear
+Feeling startled,fear
+This is blood-curdling,fear
+I'm shocked,fear
+Feeling horrified,fear
+This is spine-chilling,fear
+Very scared,fear
+Extremely afraid,fear
+Highly frightened,fear
+Really terrified,fear
+Truly fearful,fear
+Genuinely scary,fear
+Particularly anxious,fear
+Especially nervous,fear
+Specially alarming,fear
+Notably panicked,fear
+Remarkably threatened,fear
+Significantly daunting,fear
+Importantly apprehensive,fear
+Substantially uneasy,fear
+Considerably intimidating,fear
+Appreciably worried,fear
+Noticeably jittery,fear
+Observably horrifying,fear
+Perceptibly concerned,fear
+Detectably edgy,fear
+Discernibly petrifying,fear
+Recognizably frightened,fear
+Identifiably tense,fear
+Distinctively chilling,fear
+Characteristically shaking,fear
+Typically restless,fear
+Commonly dreadful,fear
+Generally timid,fear
+Usually hesitant,fear
+Normally menacing,fear
+Regularly shy,fear
+Frequently cautious,fear
+Often ominous,fear
+Sometimes queasy,fear
+Occasionally troubled,fear
+Rarely dire,fear
+Seldom disturbed,fear
+Infrequently insecure,fear
+Hardly ever forbidding,fear
+Barely alarmed,fear
+Scarcely jumpy,fear
+Almost never hair-raising,fear
+Nearly aghast,fear
+Practically startled,fear
+Virtually blood-curdling,fear
+Essentially shocked,fear
+Basically horrified,fear
+Fundamentally spine-chilling,fear
+This is normal,neutral
+Nothing special,neutral
+Regular day,neutral
+Standard procedure,neutral
+As expected,neutral
+Boring day,neutral
+Another day at work,neutral
+Just normal stuff,neutral
+Nothing unusual,neutral
+Usual routine,neutral
+Typical day,neutral
+Common occurrence,neutral
+Standard practice,neutral
+Normal situation,neutral
+Everyday thing,neutral
+Routine matter,neutral
+Ordinary day,neutral
+Usual case,neutral
+Standard day,neutral
+Normal circumstances,neutral
+Regular occurrence,neutral
+Typical situation,neutral
+Common practice,neutral
+Standard routine,neutral
+Normal activity,neutral
+Usual day,neutral
+Regular practice,neutral
+Typical routine,neutral
+Common situation,neutral
+Standard case,neutral
+Normal procedure,neutral
+Usual practice,neutral
+Regular situation,neutral
+Typical case,neutral
+Common procedure,neutral
+Standard activity,neutral
+Normal practice,neutral
+Usual activity,neutral
+Regular procedure,neutral
+Typical activity,neutral
+Common activity,neutral
+Standard matter,neutral
+Normal matter,neutral
+Usual matter,neutral
+Regular matter,neutral
+Typical matter,neutral
+Common matter,neutral
+Standard circumstances,neutral
+Average day,neutral
+Medium situation,neutral
+Fair condition,neutral
+Okay state,neutral
+Alright circumstance,neutral
+Acceptable scenario,neutral
+Tolerable condition,neutral
+Passable situation,neutral
+Adequate circumstance,neutral
+Satisfactory scenario,neutral
+Sufficient condition,neutral
+Reasonable situation,neutral
+Moderate circumstance,neutral
+Balanced scenario,neutral
+Stable condition,neutral
+Steady situation,neutral
+Consistent circumstance,neutral
+Constant scenario,neutral
+Uniform condition,neutral
+Regular situation,neutral
+Systematic circumstance,neutral
+Orderly scenario,neutral
+Organized condition,neutral
+Structured situation,neutral
+Methodical circumstance,neutral
+Procedural scenario,neutral
+Formal condition,neutral
+Official situation,neutral
+Proper circumstance,neutral
+Correct scenario,neutral
+Accurate condition,neutral
+Precise situation,neutral
+Exact circumstance,neutral
+Specific scenario,neutral
+Particular condition,neutral
+Individual situation,neutral
+Personal circumstance,neutral
+Private scenario,neutral
+Confidential condition,neutral
+Secret situation,neutral
+Hidden circumstance,neutral
+Concealed scenario,neutral
+Obscured condition,neutral
+Masked situation,neutral
+Disguised circumstance,neutral
+Camouflaged scenario,neutral
+Veiled condition,neutral
+Covered situation,neutral

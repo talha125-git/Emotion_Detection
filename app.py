@@ -56,7 +56,7 @@ body {
     bottom: 20px;
     left: 20px;
     color: black;
-    font-size: 18px;
+    font-size: 14px;
     font-family: monospace;
 }
 .stButton > button {
@@ -178,7 +178,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("Training Samples", "500+")
 with col2:
-    st.metric("Accuracy", "~95%")
+    st.metric("Accuracy", "~75%")
 with col3:
     st.metric("Emotions", "5")
 

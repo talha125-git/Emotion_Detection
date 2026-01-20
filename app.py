@@ -54,9 +54,9 @@ body {
 .footer {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    left: 20px;
     color: black;
-    font-size: 14px;
+    font-size: 18px;
     font-family: monospace;
 }
 .stButton > button {
@@ -75,7 +75,7 @@ body {
 """, unsafe_allow_html=True)
 
 # Add footer with bold Abutalha
-st.markdown("<div class='footer'>by <br> <b>Abutalha</b></div>", unsafe_allow_html=True)
+st.markdown("<div class='footer'>Developed by <br> <b>  Abutalha</b></div>", unsafe_allow_html=True)
 
 st.markdown("<div class='title'>Emotion Detection from Text</div>", unsafe_allow_html=True)
 st.write("")
@@ -210,6 +210,6 @@ st.caption(
 )
 
 # push to github
-#       git add .
-# 		git commit -m "Add bg-white in all inputs"
-# 		git push origin talha
+    #   git add .
+	# 	git commit -m "Add My name to left"
+	# 	git push origin main

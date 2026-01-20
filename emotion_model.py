@@ -51,7 +51,7 @@ def load_dataset_from_csv():
                     'sad', 'sad', 'sad',
                     'angry', 'angry', 'angry',
                     'fear', 'fear', 'fear',
-                    'neutral', 'neutral', 'neutral']
+                    'normal', 'normal', 'normal']
     })
     
     # Save to CSV for future use
@@ -128,7 +128,7 @@ def predict_emotion(text):
         return prediction
     except Exception as e:
         print(f"Prediction error: {e}")
-        return "neutral"
+        return "normal"
 
 def predict_emotion_with_confidence(text):
     """Predict emotion with confidence score"""
@@ -156,7 +156,7 @@ def predict_emotion_with_confidence(text):
             
     except Exception as e:
         print(f"Prediction with confidence error: {e}")
-        return "neutral", 50.0
+        return "normal", 50.0
 
 # ================== TEST EXAMPLES ==================
 print("\n" + "=" * 50)

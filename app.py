@@ -1,6 +1,7 @@
 import streamlit as st
 import sys
 import os
+import re
 
 # Add the current directory to Python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -11,7 +12,6 @@ except ImportError as e:
     st.error(f"Import Error: {e}")
     st.info("Trying alternative import method...")
     try:
-        # Try importing the module directly
         import emotion_model
         predict_emotion_with_confidence = emotion_model.predict_emotion_with_confidence
         predict_emotion = emotion_model.predict_emotion
@@ -78,19 +78,17 @@ body {
 st.markdown("<div class='footer'>by <br> <b>Abutalha</b></div>", unsafe_allow_html=True)
 
 st.markdown("<div class='title'>Emotion Detection from Text</div>", unsafe_allow_html=True)
-
-
 st.write("")
 
-# Add instructions
+# Instructions
 with st.expander("💡 How to use", expanded=False):
     st.write("""
     **Examples to try:**
     - "I'm so excited about this!" → Happy 😊
     - "This is really disappointing" → Sad 😢
-    - "I can't believe this happened!" → Angry 😠
+    - "This is infuriating!" → Angry 😠
     - "I'm afraid of what might happen" → Fear 😨
-    - "It's just another regular day" → Neutral 😐
+    - "@@@@@@" → Normal 😐
     """)
 
 user_text = st.text_area(
@@ -100,68 +98,83 @@ user_text = st.text_area(
     help="Enter any text message to analyze the emotion"
 )
 
+# Text validation
+def is_valid_text(text):
+    cleaned = re.sub(r'[^a-zA-Z\s]', '', text).strip()
+
+    if len(cleaned) < 3:
+        return False
+
+    if not re.search(r'[aeiou]', cleaned.lower()):
+        return False
+
+    return True
+
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     detect_clicked = st.button("🔍 Detect Emotion", type="primary", use_container_width=True)
-    
+
 if detect_clicked:
     if user_text.strip() == "":
         st.warning("Please enter some text.")
+
+    # Only special characters → NORMAL
+    elif re.fullmatch(r'[@#$%^&*()_+=!~`{}\[\]|\\:;"\'<>,.?/-]+', user_text.strip()):
+        emotion = "normal"
+        confidence = 80.0
+
+    # Random meaningless text
+    elif not is_valid_text(user_text):
+        st.error("❌ Invalid text detected. Please enter valid words.")
+        st.stop()
+
     else:
         with st.spinner("Analyzing emotion..."):
             try:
-                # Check which function is available
-                try:
-                    emotion, confidence = predict_emotion_with_confidence(user_text)
-                except:
-                    # Fallback to simple prediction
-                    emotion = predict_emotion(user_text)
-                    confidence = 75.0  # Default confidence
-                
-                # Color coding for emotions
-                emotion_colors = {
-                    'happy': '#22c55e',
-                    'sad': '#3b82f6',
-                    'angry': '#ef4444',
-                    'fear': '#8b5cf6',
-                    'neutral': '#94a3b8'
-                }
-                
-                # Emotion emojis
-                emotion_emojis = {
-                    'happy': '😊',
-                    'sad': '😢',
-                    'angry': '😠',
-                    'fear': '😨',
-                    'neutral': '😐'
-                }
-                
-                color = emotion_colors.get(emotion, '#94a3b8')
-                emoji = emotion_emojis.get(emotion, '😐')
-                
-                # Display result
-                st.markdown(
-                    f"""
-                    <div class='emotion-box' style='border-left: 5px solid {color};'>
-                        {emoji} Detected Emotion: <br>
-                        <span style='color: {color}; font-size: 36px;'><b>{emotion.upper()}</b></span><br>
-                        <span style='color: #cbd5e1; font-size: 16px;'>
-                        Confidence: {confidence:.1f}%
-                        </span>
-                    </div>
-                    """,
-                    unsafe_allow_html=True
-                )
-                    
-            except Exception as e:
-                st.error(f"Error: {str(e)}")
-                st.info("Please try again with different text.")
+                emotion, confidence = predict_emotion_with_confidence(user_text)
+            except Exception:
+                emotion = predict_emotion(user_text)
+                confidence = 75.0
 
-# Add statistics
+    # Color coding
+    emotion_colors = {
+        'happy': '#22c55e',
+        'sad': '#3b82f6',
+        'angry': '#ef4444',
+        'fear': '#8b5cf6',
+        'normal': '#94a3b8'
+    }
+
+    # Emojis
+    emotion_emojis = {
+        'happy': '😊',
+        'sad': '😢',
+        'angry': '😠',
+        'fear': '😨',
+        'normal': '😐'
+    }
+
+    color = emotion_colors.get(emotion, '#94a3b8')
+    emoji = emotion_emojis.get(emotion, '😐')
+
+    st.markdown(
+        f"""
+        <div class='emotion-box' style='border-left: 5px solid {color};'>
+            {emoji} Detected Emotion:<br>
+            <span style='color:{color}; font-size:36px;'><b>{emotion.upper()}</b></span><br>
+            <span style='color:#cbd5e1; font-size:16px;'>
+            Confidence: {confidence:.1f}%
+            </span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Statistics
 st.divider()
 st.markdown("### 📈 Model Statistics")
 
-col1 ,col2, col3 = st.columns(3)
+col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("Training Samples", "500+")
 with col2:
@@ -169,19 +182,34 @@ with col2:
 with col3:
     st.metric("Emotions", "5")
 
-# Add emotion distribution visualization
+# Emotion categories
 st.markdown("#### Emotion Categories")
-emotions = ['happy', 'sad', 'angry', 'fear', 'neutral']
+emotions = ['happy', 'sad', 'angry', 'fear', 'normal']
 colors = ['#22c55e', '#3b82f6', '#ef4444', '#8b5cf6', '#94a3b8']
 
 cols = st.columns(5)
 for i, (emotion, color) in enumerate(zip(emotions, colors)):
     with cols[i]:
-        st.markdown(f"<div style='text-align: center; color: {color}; font-weight: bold;'>{emotion.capitalize()}</div>", unsafe_allow_html=True)
-        st.markdown(f"<div style='background-color: {color}; height: 10px; border-radius: 5px;'></div>", unsafe_allow_html=True)
+        st.markdown(
+            f"<div style='text-align:center;color:{color};font-weight:bold;'>{emotion.capitalize()}</div>",
+            unsafe_allow_html=True
+        )
+        st.markdown(
+            f"<div style='background-color:{color};height:10px;border-radius:5px;'></div>",
+            unsafe_allow_html=True
+        )
 
-st.caption("| by <b>Abutalha</b> <br>" 
-            " CU-4279-2023 <br>" 
-            " BSSE-Section-A  <br>"
-            " Presented to <b> Miss Minahil Ather </b> <br> "
-            "Software Varification and Validation Lab", unsafe_allow_html=True)
+# Caption
+st.caption(
+    "| by <b>Abutalha</b><br>"
+    "CU-4279-2023<br>"
+    "BSSE-Section-A<br>"
+    "Presented to <b>Miss Minahil Ather</b><br>"
+    "Software Verification and Validation Lab",
+    unsafe_allow_html=True
+)
+
+# push to github
+#       git add .
+# 		git commit -m "Add bg-white in all inputs"
+# 		git push origin talha
